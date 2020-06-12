@@ -22,5 +22,13 @@ namespace NUnitTestProject1
             Assert.AreEqual(test.Age, ExpectedAge);
             Assert.AreEqual(test.Name, ExpectedName);
         }
+        public void Test2()
+        {
+            Company test = new Company("Telenor", 7);
+            var ExpectedName = "Telenor";
+            var ExpectedEmpl = 7;
+            Assert.AreEqual(test.CompanyName, ExpectedName);
+            Assert.AreEqual(test.NumOfEmpl, ExpectedEmpl);
+        }
     }
 }
