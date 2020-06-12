@@ -63,6 +63,15 @@ namespace Checkpoint2
             NumOfEmpl = _numOfEmpl;
 
         }
+        public void DescripeCompany(Company x)
+        {
+            Console.WriteLine("The company is named " + x.CompanyName);
+            Console.WriteLine("It has {0} emplyee(s).", x.NumOfEmpl);
+            
+
+
+        }
+
 
 
     }
