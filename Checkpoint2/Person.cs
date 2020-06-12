@@ -45,7 +45,7 @@ namespace Checkpoint2
         }
 
 
-        /*public static bool SetHireDate()
+        /*public static bool validateSetHireDate()
         {
             return (Regex.IsMatch(_hireDate, "^[0-9]\d+$")); 
         }*/
