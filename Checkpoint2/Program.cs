@@ -10,11 +10,17 @@ namespace Checkpoint2
     {
         static void Main(string[] args)
         {
-            Employee Mark = new Employee("01.02.2020", "Mark Knophler", 57);
+            List<Employee> TeliaEmployees = new List<Employee>();
+
+
+            TeliaEmployees.Add(new Employee("01.02.2020", "Mark Knophler", 57));
             new Person();
             new Company("Telia", 0);
 
-            Mark.DescripeEmployee(Mark);
+            foreach (var Empl in TeliaEmployees)
+            {
+                Empl.DescripeEmployee(Empl);
+            }
             
                
             
@@ -57,6 +63,10 @@ namespace Checkpoint2
             Console.WriteLine("He/She was hired {0}", x.HireDate);
             
 
+        }
+        public void CreateEmployee()
+        {
+            Console.WriteLine("What is your name?");
         }
         
 
